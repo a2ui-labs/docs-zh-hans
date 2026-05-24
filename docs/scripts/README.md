@@ -1,23 +1,25 @@
 # 文档转换脚本
 
-该目录包含一些辅助脚本，用于在 **MkDocs** 构建流程中预处理文档。
+此目录包含用于为 **MkDocs** 构建流程准备文档的工具脚本。
 
-## 目的
+## 用途
 
-为了同时保证 GitHub 与托管站点上的阅读体验，我们将 **GitHub-flavored Markdown** 作为主要事实来源。这些脚本会在构建流水线中，把 GitHub 原生语法转换为 **MkDocs 兼容语法**（主要针对 `pymdown-extensions`）。
+为了同时保证 GitHub 与托管站点上的阅读体验，项目使用 **GitHub-flavored Markdown** 作为主要事实来源。该脚本会在构建流水线中把 GitHub 原生语法转换为 **MkDocs 兼容语法**（特别是面向 `pymdown-extensions`）。
 
 ## 支持的转换（单向）
 
-脚本执行的是单向转换：**GitHub Markdown → MkDocs 语法**。
+该脚本执行单向转换：**GitHub Markdown → MkDocs Syntax**。
 
-### Alert / Admonition 转换
+### Alert/Admonition 转换
 
-- GitHub 使用基于 blockquote 的 alert 语法。
-- MkDocs 则需要使用 `!!!` 或 `???` 语法来渲染带颜色的提示框。
+脚本会处理以下转换：
+
+- GitHub 使用基于 blockquote 的语法来表示 alert。
+- MkDocs 需要 `!!!` 或 `???` 语法来渲染彩色提示框。
 
 ## 运行转换
 
-转换会作为构建流水线的一部分自动执行，不需要额外步骤。如果你需要手动运行，可以在仓库根目录执行 `convert_docs.py`。
+转换会作为构建流水线的一部分运行，不需要额外步骤。如果需要手动运行转换，可以在仓库根目录运行 `convert_docs.py` 脚本。
 
 ```bash
 python docs/scripts/convert_docs.py
@@ -25,15 +27,17 @@ python docs/scripts/convert_docs.py
 
 ### 示例
 
-- **源格式（GitHub-flavored Markdown）：**
-  ```markdown
-  > ⚠️ **Attention**
-  >
-  > This is an alert.
-  ```
+- **源文件（GitHub-flavored Markdown）：**
 
-- **目标格式（MkDocs 语法）：**
-  ```markdown
-  !!! warning "Attention"
-      This is an alert.
-  ```
+    ```markdown
+    > ⚠️ **Attention**
+    >
+    > This is an alert.
+    ```
+
+- **目标（MkDocs Syntax）：**
+
+    ```markdown
+    !!! warning "Attention"
+    This is an alert.
+    ```

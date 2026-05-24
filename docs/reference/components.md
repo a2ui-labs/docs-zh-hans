@@ -646,5 +646,5 @@ npm start -- gallery
 
         [:material-code-json: 基础目录定义（JSON Schema）](https://a2ui.org/specification/v0_9/basic_catalog.json)
 
-- **[自定义组件指南](../guides/custom-components.md)**：构建你自己的组件
+- **[自定义组件指南](../guides/authoring-components.md)**：构建你自己的组件
 - **[主题指南](../guides/theming.md)**：让组件样式与你的品牌一致

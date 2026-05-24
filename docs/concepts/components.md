@@ -252,7 +252,7 @@ surface 是一个完整、连贯的 UI（表单、仪表盘、聊天界面等）
 
 自定义组件会从客户端渲染器 _公布_ 给 LLM。随后 LLM 就可以在标准目录之外继续使用它们。
 
-实现细节请参见 [自定义组件指南](../guides/custom-components.md)。
+实现细节请参见 [自定义组件指南](../guides/authoring-components.md)。
 
 ## 最佳实践
 

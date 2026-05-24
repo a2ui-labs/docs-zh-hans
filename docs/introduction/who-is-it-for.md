@@ -16,7 +16,7 @@
 - 跨平台：覆盖 Web、移动端、桌面端
 - 可互操作：开源协议，同一规范可对应多个渲染器
 
-**开始阅读：** [客户端接入](../guides/client-setup.md) | [主题与样式](../guides/theming.md) | [自定义组件](../guides/custom-components.md)
+**开始阅读：** [客户端接入](../guides/client-setup.md) | [主题与样式](../guides/theming.md) | [自定义组件](../guides/authoring-components.md)
 
 ### 2. 智能体开发者（后端 / AI）
 

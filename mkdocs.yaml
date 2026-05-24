@@ -46,14 +46,18 @@ nav:
       - 数据绑定: concepts/data-binding.md
       - 组件目录: concepts/catalogs.md
       - 传输层: concepts/transports.md
-      - 客户端到服务端操作: concepts/client_to_server_actions.md
+      - Actions: concepts/actions.md
   - 指南:
       - 客户端集成: guides/client-setup.md
       - Agent 开发: guides/agent-development.md
+      - 在任意 Agent 框架中使用 A2UI (AG-UI): guides/a2ui-with-any-agent-framework.md
       - Renderer 开发: guides/renderer-development.md
-      - 自定义组件: guides/custom-components.md
+      - 定义你自己的 Catalog: guides/defining-your-own-catalog.md
+      - 编写自定义组件: guides/authoring-components.md
       - 主题与样式: guides/theming.md
       - 通过 MCP 使用 A2UI: guides/a2ui_over_mcp.md
+      - A2UI 中的 MCP Apps: guides/mcp-apps-in-a2ui.md
+      - MCP Apps 中的 A2UI: guides/a2ui-in-mcp-apps.md
   - 参考:
       - 组件画廊: reference/components.md
       - 消息参考: reference/messages.md
@@ -170,6 +174,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+hooks:
+  - hooks.py
+
 plugins:
   - search
   - macros
@@ -178,8 +185,13 @@ plugins:
       redirect_maps:
         'catalogs.md': 'concepts/catalogs.md'
         'transports.md': 'concepts/transports.md'
-        'client_to_server_actions.md': 'concepts/client_to_server_actions.md'
+        'client_to_server_actions.md': 'concepts/actions.md'
+        'concepts/client_to_server_actions.md': 'concepts/actions.md'
+        'actions.md': 'concepts/actions.md'
         'renderers.md': 'reference/renderers.md'
         'agents.md': 'reference/agents.md'
         'community.md': 'ecosystem/community.md'
         'introduction/where-is-it-used.md': 'ecosystem/a2ui-in-the-world.md'
+        'guides/custom-components.md': 'guides/authoring-components.md'
+        'guides/guide_a2ui_dynamic_mcp.md': 'guides/a2ui-in-mcp-apps.md'
+        'guides/mcp-apps-in-a2ui-surface.md': 'guides/mcp-apps-in-a2ui.md'

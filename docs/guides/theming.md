@@ -182,6 +182,6 @@ TODO：补充自定义字体示例。
 
 ## 下一步
 
-- **[自定义组件](custom-components.md)**：用你的样式构建自定义组件
+- **[自定义组件](authoring-components.md)**：用你的样式构建自定义组件
 - **[组件参考](../reference/components.md)**：查看所有组件的样式选项
 - **[客户端接入](client-setup.md)**：在应用中设置渲染器

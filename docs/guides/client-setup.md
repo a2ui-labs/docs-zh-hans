@@ -17,7 +17,7 @@
 
 组件目录可以是任意组件集合——标准组件、你自己的自定义组件，或者共享库。**真正重要的是你的设计系统。** 你可以注册任意一组组件和函数，A2UI 都能配合它们工作。catalog 只是代理和渲染器之间的契约。
 
-如何扩展或替换标准 catalog，请参见 [自定义组件](custom-components.md)。
+如何扩展或替换标准 catalog，请参见 [自定义组件](authoring-components.md)。
 
 ## 共享 Web 库
 
@@ -159,6 +159,6 @@ TODO：补充错误处理示例。
 
 - **[Quickstart](../quickstart.md)**：试用演示应用
 - **[主题与样式](theming.md)**：自定义外观与风格
-- **[自定义组件](custom-components.md)**：扩展组件目录
+- **[自定义组件](authoring-components.md)**：扩展组件目录
 - **[Agent Development](agent-development.md)**：构建生成 A2UI 的代理
 - **[Reference Documentation](../reference/messages.md)**：深入了解协议

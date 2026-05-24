@@ -6,9 +6,9 @@
 
 ## 目录定义
 
-目录是一个 [JSON Schema 文件](../specification/v0_9/json/client_capabilities.json#L62C5-L95C6)，用于描述智能体可以用来通过服务端驱动 UI 定义 A2UI surface 的组件、函数和主题。来自智能体的所有 A2UI JSON 都会根据所选目录进行验证。
+目录是一个 [JSON Schema 文件](../../specification/v0_9/json/client_capabilities.json#L62C5-L95C6)，用于描述智能体可以用来通过服务端驱动 UI 定义 A2UI surface 的组件、函数和主题。来自智能体的所有 A2UI JSON 都会根据所选目录进行验证。
 
-[目录 JSON Schema](../specification/v0_9/json/client_capabilities.json#L62C5-L95C6) 如下：
+[目录 JSON Schema](../../specification/v0_9/json/client_capabilities.json#L62C5-L95C6) 如下：
 
 ```json
 {
@@ -59,7 +59,7 @@
 
 ### 基础目录
 
-为了帮助开发者快速开始，A2UI 团队维护了 [基础目录](../specification/v0_9/json/basic_catalog.json)。
+为了帮助开发者快速开始，A2UI 团队维护了 [基础目录](../../specification/v0_9/catalogs/basic/catalog.json)。
 
 这是一个预定义的目录文件，包含一组标准通用组件（按钮、输入框、卡片）和函数。它并不是某种特殊的目录“类型”；它只是我们已经编写好、并且配有开源渲染器的目录版本。
 
@@ -67,7 +67,7 @@
 
 由于 A2UI 的设计目标是让 LLM 在设计时或运行时都能生成 UI，我们并不认为可移植性要求多个客户端共享同一个标准化目录；LLM 可以为每个前端单独解释各自的目录。
 
-[查看 A2UI v0.9 基础目录](../specification/v0_9/json/basic_catalog.json)
+[查看 A2UI v0.9 基础目录](../../specification/v0_9/catalogs/basic/catalog.json)
 
 ### 定义你自己的目录
 
@@ -77,7 +77,7 @@
 
 为了简单起见，我们建议直接构建与客户端设计系统一致的目录，而不是试图通过适配器把基础目录映射过去。由于 A2UI 面向 GenUI，我们预期 LLM 可以为不同客户端解释不同的目录。
 
-[查看 Rizzcharts 目录示例](../samples/agent/adk/rizzcharts/rizzcharts_catalog_definition.json)
+[查看 Rizzcharts 目录示例](../../samples/agent/adk/rizzcharts/catalog_schemas/0.9/rizzcharts_catalog_definition.json)
 
 ### 建议
 
@@ -88,7 +88,7 @@
 
 ## 构建目录
 
-目录是一个 JSON Schema 文件，需符合 [目录 schema](../specification/v0_9/json/client_capabilities.json#L62C5-L95C6)；它定义了智能体在构建 surface 时可以使用的组件、主题和函数。
+目录是一个 JSON Schema 文件，需符合 [目录 schema](../../specification/v0_9/json/client_capabilities.json#L62C5-L95C6)；它定义了智能体在构建 surface 时可以使用的组件、主题和函数。
 
 ### 示例：最小目录
 
